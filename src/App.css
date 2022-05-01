@@ -1,8 +1,16 @@
-.App {
-  text-align: center;
+#root {
+  margin: 1em;
 }
 .good-row{
   margin-bottom: 10px;
+}
+.inc-btn{
+  background-color: rgb(173, 237, 173);
+  margin:0.5em
+}
+.dec-btn{
+  background-color: rgb(237, 173, 179);
+  margin:0.5em
 }
 
 .good-in-items{

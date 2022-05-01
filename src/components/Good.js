@@ -2,11 +2,11 @@ import {Row, Col , Button} from 'antd';
 const Good = ({ price, name, inItems, onAdd }) => <Row className={`good-row ${inItems?'good-in-items':''}`}>
     <Col span={8}>{name} {price.toLocaleString('ar-EG')}ج</Col>
     <Col span={16}>
-        <Button onClick={() => onAdd({ price, name, amount: 1 })}>+1</Button>
-        <Button onClick={() => onAdd({ price, name, amount: 3 })}>+3</Button>
-        <Button onClick={() => onAdd({ price, name, amount: 5 })}>+5</Button>
-        <Button onClick={() => onAdd({ price, name, amount: -1 })}>-1</Button>
-        <Button onClick={() => onAdd({ price, name, amount: -5 })}>-5</Button>
+        <Button className='inc-btn' onClick={() => onAdd({ price, name, amount: 1 })}>+1</Button>
+        <Button className='inc-btn' onClick={() => onAdd({ price, name, amount: 3 })}>+3</Button>
+        <Button className='inc-btn' onClick={() => onAdd({ price, name, amount: 5 })}>+5</Button>
+        <Button className='dec-btn' onClick={() => onAdd({ price, name, amount: -1 })}>-1</Button>
+        <Button className='dec-btn' onClick={() => onAdd({ price, name, amount: -5 })}>-5</Button>
     </Col>
 </Row>
 

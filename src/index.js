@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ConfigProvider direction='rtl'>
-    <App />
+    <App className="app" />
     </ConfigProvider>
   </React.StrictMode>
 );
