@@ -18,9 +18,10 @@ function App() {
   }
   const categoriesButtons = Object.values(CATEGORIES).map(category => <Col key={category}><Button type={category===selectedCategory?"primary":""} onClick={()=>setCategory(category)}>{category}</Button></Col>)
   const categoryGoods = goods.filter(i=>i.category===selectedCategory).map(i=>getGoods(i, items,onAdd))
-  console.log({items, CATEGORIES, goods});
+  const totalPrice = items.reduce((agg, item)=>agg+item.total,0);
   return (
     <>
+    <p>إجمالي السعر : {totalPrice}ج</p>
     <Row>{categoriesButtons}</Row>
     {categoryGoods}
   <GoodsTable goods={[...items]} />
