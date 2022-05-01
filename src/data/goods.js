@@ -1,7 +1,8 @@
 export const CATEGORIES = {
     BASIC:"أساسي",
     BASIC2:"٢ أساسي",
-    OIL:"زيت",
+    OIL2:"زيت",
+    OIL:"زيت عافية",
     SAMN:"سمن",
     TEA:"شاي",
     CLEAN:"غسيل",
@@ -13,22 +14,22 @@ export const goods = [
     {
         name: "زيت ٨٠٠",
         price: 24,
-        category : CATEGORIES.OIL
+        category : CATEGORIES.OIL2
     },
     {
         name: "زيت ١ لتر",
         price: 30,
-        category : CATEGORIES.OIL
+        category : CATEGORIES.OIL2
     },
     {
         name: "زيت رويال",
         price: 30,
-        category : CATEGORIES.OIL
+        category : CATEGORIES.OIL2
     },
     {
         name: "زيت سولينا",
         price: 32,
-        category : CATEGORIES.OIL
+        category : CATEGORIES.OIL2
     },
     {
         name: "عافية ذرة لتر",
@@ -51,22 +52,22 @@ export const goods = [
     {
         name: "هلا عباد ٢ لتر",
         price: 75,
-        category : CATEGORIES.OIL
+        category : CATEGORIES.OIL2
     },
     {
         name: "هلا عباد ٣ لتر",
         price: 95,
-        category : CATEGORIES.OIL
+        category : CATEGORIES.OIL2
     },
     {
         name: "زيت روتس ١ لتر",
         price: 40,
-        category : CATEGORIES.OIL
+        category : CATEGORIES.OIL2
     },
     {
         name: "زيت روتس ٢ لتر",
         price: 80,
-        category : CATEGORIES.OIL
+        category : CATEGORIES.OIL2
     },
     {
         name: "سكر",
