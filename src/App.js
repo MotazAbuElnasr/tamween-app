@@ -24,7 +24,7 @@ function App() {
     <p>إجمالي السعر : {totalPrice}ج</p>
     <Row>{categoriesButtons}</Row>
     {categoryGoods}
-  <GoodsTable goods={[...items]} />
+  <GoodsTable goods={[...items].reverse()} />
   <Button onClick={()=> setItems([])}>اعادة</Button>
     </>
   );
