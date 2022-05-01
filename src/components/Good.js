@@ -5,6 +5,7 @@ const Good = ({ price, name, inItems, onAdd }) => <Row className={`good-row ${in
         <Button className='inc-btn' onClick={() => onAdd({ price, name, amount: 1 })}>+1</Button>
         <Button className='inc-btn' onClick={() => onAdd({ price, name, amount: 3 })}>+3</Button>
         <Button className='inc-btn' onClick={() => onAdd({ price, name, amount: 5 })}>+5</Button>
+        <span className='item-amount'>{inItems?.amount || 0}</span>
         <Button className='dec-btn' onClick={() => onAdd({ price, name, amount: -1 })}>-1</Button>
         <Button className='dec-btn' onClick={() => onAdd({ price, name, amount: -5 })}>-5</Button>
     </Col>

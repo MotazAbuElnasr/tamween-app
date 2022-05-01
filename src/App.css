@@ -6,11 +6,12 @@
 }
 .inc-btn{
   background-color: rgb(173, 237, 173);
-  margin:0.5em
 }
 .dec-btn{
   background-color: rgb(237, 173, 179);
-  margin:0.5em
+}
+.item-amount{
+  margin: 0 0.5em;
 }
 
 .good-in-items{
